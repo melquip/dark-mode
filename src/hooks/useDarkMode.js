@@ -11,7 +11,7 @@ export default function useDarkMode(initialValue) {
 			body.classList.remove('dark-mode')
 		}
 	}, [darkMode])
-	const toggleDarkMode = () => {
+	const toggleDarkMode = (e) => {
 		e.preventDefault();
 		setDarkMode(!darkMode);
 	}
